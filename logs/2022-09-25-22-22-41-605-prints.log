@@ -1,0 +1,12 @@
+22:22:41.921 [TestNG-tests-1] DEBUG com.mystore.testcases.LoginPageTest - setup started
+22:25:37.836 [TestNG-tests-1] DEBUG com.mystore.testcases.LoginPageTest - driver launched
+22:25:37.838 [TestNG-tests-1] DEBUG com.mystore.testcases.LoginPageTest - IndexPage obj created
+22:25:37.838 [TestNG-tests-1] INFO  com.mystore.testcases.LoginPageTest - setUp method closed
+22:25:37.844 [TestNG-tests-1] DEBUG com.mystore.testcases.LoginPageTest - =========loginTest started=========
+22:25:37.845 [TestNG-tests-1] DEBUG com.mystore.testcases.LoginPageTest - user is going to click in sign in
+22:25:44.032 [TestNG-tests-1] DEBUG com.mystore.testcases.LoginPageTest - enter email and password to login
+22:26:01.145 [TestNG-tests-1] DEBUG com.mystore.testcases.LoginPageTest - checking login status
+22:26:01.148 [TestNG-tests-1] INFO  com.mystore.testcases.LoginPageTest - login is success
+22:26:01.149 [TestNG-tests-1] INFO  com.mystore.testcases.LoginPageTest - =========loginTest completed=========
+22:26:01.578 [TestNG-tests-1] DEBUG com.mystore.testcases.LoginPageTest - tearDown method started
+22:26:07.624 [TestNG-tests-1] INFO  com.mystore.testcases.LoginPageTest - tearDown method closed

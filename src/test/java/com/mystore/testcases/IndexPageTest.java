@@ -22,7 +22,7 @@ public class IndexPageTest extends BaseClass {
 			System.out.println("myStoreLogo is validated successfully");
 	}
 
-	@Test
+	@Test(enabled=false)
 	public void myStoreTitle() {	
 			System.out.println("vaidating myStoreTitle");
 		String actTitle = indexPage.getMyStoreTitle();

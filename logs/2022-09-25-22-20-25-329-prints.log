@@ -1,0 +1,12 @@
+22:20:25.486 [main] DEBUG com.mystore.testcases.LoginPageTest - setup started
+22:20:42.114 [main] DEBUG com.mystore.testcases.LoginPageTest - driver launched
+22:20:42.116 [main] DEBUG com.mystore.testcases.LoginPageTest - IndexPage obj created
+22:20:42.117 [main] INFO  com.mystore.testcases.LoginPageTest - setUp method closed
+22:20:42.123 [main] DEBUG com.mystore.testcases.LoginPageTest - =========loginTest started=========
+22:20:42.123 [main] DEBUG com.mystore.testcases.LoginPageTest - user is going to click in sign in
+22:20:50.118 [main] DEBUG com.mystore.testcases.LoginPageTest - enter email and password to login
+22:20:55.627 [main] DEBUG com.mystore.testcases.LoginPageTest - checking login status
+22:20:55.628 [main] INFO  com.mystore.testcases.LoginPageTest - login is success
+22:20:55.629 [main] INFO  com.mystore.testcases.LoginPageTest - =========loginTest completed=========
+22:20:56.037 [main] DEBUG com.mystore.testcases.LoginPageTest - tearDown method started
+22:20:56.936 [main] INFO  com.mystore.testcases.LoginPageTest - tearDown method closed

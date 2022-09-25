@@ -1,10 +1,18 @@
 package com.mystore.base;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+<<<<<<< HEAD
+=======
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+>>>>>>> branch_practise
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -18,7 +26,11 @@ public class BaseClass {
 	public Properties prop;
 	public WebDriver driver;
 
+<<<<<<< HEAD
 	@BeforeMethod
+=======
+	@BeforeMethod	
+>>>>>>> branch_practise
 	public void loadConfig() {
 		try {
 			prop = new Properties();
@@ -31,6 +43,21 @@ public class BaseClass {
 			e.printStackTrace();
 		}
 	}
+	
+	
+	public String takeScreenshot(String testName,WebDriver driver) throws IOException {
+		
+		File SourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		String destinationFilePath = System.getProperty("user.dir")+"\\screenshots\\"+testName+".png";
+		FileUtils.copyFile(SourceFile,new File(destinationFilePath));
+		
+		String imagePath = "http://localhost:8080/job/TutorialN/ws/screenshots/"+testName+".png";
+		
+		return destinationFilePath;
+		
+		}
+	
+	
 
 	public WebDriver launchApp() {
 		String browserName1 = prop.getProperty("browserName");
