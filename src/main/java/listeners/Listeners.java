@@ -36,7 +36,7 @@ public class Listeners extends BaseClass implements ITestListener {
 		String testName= result.getName();
 		
 		//extentTest.pass("passed");
-				extentTestThread.get().pass("passed");
+				extentTestThread.get().pass(testName+" passed");
 				//extentTestThread.get().log(Status.PASS,testName+" has passed");
 		
 		try {

@@ -14,6 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -22,7 +23,7 @@ public class BaseClass {
 	public Properties prop;
 	public WebDriver driver;
 
-	@BeforeTest
+	@BeforeMethod	
 	public void loadConfig() {
 		try {
 			prop = new Properties();
@@ -45,7 +46,7 @@ public class BaseClass {
 		
 		String imagePath = "http://localhost:8080/job/TutorialN/ws/screenshots/"+testName+".png";
 		
-		return imagePath;
+		return destinationFilePath;
 		
 		}
 	
