@@ -1,0 +1,7 @@
+18:16:57.003 [TestNG-tests-1] DEBUG com.mystore.testcases.LoginPageTest - setup started
+18:18:00.311 [TestNG-tests-1] DEBUG com.mystore.testcases.LoginPageTest - driver launched
+18:18:02.097 [TestNG-tests-1] DEBUG com.mystore.testcases.LoginPageTest - IndexPage obj created
+18:18:02.098 [TestNG-tests-1] INFO  com.mystore.testcases.LoginPageTest - setUp method closed
+18:18:02.372 [TestNG-tests-1] DEBUG com.mystore.testcases.LoginPageTest - =========loginTest started=========
+18:18:02.372 [TestNG-tests-1] DEBUG com.mystore.testcases.LoginPageTest - user is going to click in sign in
+18:18:32.549 [TestNG-tests-1] DEBUG com.mystore.testcases.LoginPageTest - enter email and password to login

@@ -5,11 +5,11 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -18,7 +18,7 @@ public class BaseClass {
 	public Properties prop;
 	public WebDriver driver;
 
-	@BeforeTest
+	@BeforeMethod
 	public void loadConfig() {
 		try {
 			prop = new Properties();
@@ -34,6 +34,7 @@ public class BaseClass {
 
 	public WebDriver launchApp() {
 		String browserName1 = prop.getProperty("browserName");
+		//String browserName1 = ("chrome");
 		if (browserName1.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			// Set Browser to ThreadLocalMap
