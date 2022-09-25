@@ -45,7 +45,7 @@ public class BaseClass {
 		
 		String imagePath = "http://localhost:8080/job/TutorialN/ws/screenshots/"+testName+".png";
 		
-		return destinationFilePath;
+		return imagePath;
 		
 		}
 	
