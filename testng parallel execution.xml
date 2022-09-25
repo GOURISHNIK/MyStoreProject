@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" thread-count="8" parallel="tests">
-<<<<<<< HEAD
-=======
 <listeners>
      <listener class-name="listeners.Listeners"/>
   </listeners>
 
->>>>>>> branch_practise
   <test thread-count="5" name="TestAll">
     <classes>
       <class name="com.mystore.testcases.LoginPageTest"/>
