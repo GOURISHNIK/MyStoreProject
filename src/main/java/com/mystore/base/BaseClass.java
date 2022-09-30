@@ -74,7 +74,7 @@ public class BaseClass {
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
 		}
-
+		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
 		driver.manage().window().maximize();

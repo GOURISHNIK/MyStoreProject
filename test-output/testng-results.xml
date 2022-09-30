@@ -1,29 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-26T14:33:52 IST" name="Suite" finished-at="2022-09-26T14:34:17 IST" duration-ms="24683">
+  <suite started-at="2022-09-30T20:42:09 IST" name="Default suite" finished-at="2022-09-30T20:42:48 IST" duration-ms="39263">
     <groups>
     </groups>
-    <test started-at="2022-09-26T14:33:52 IST" name="Test" finished-at="2022-09-26T14:34:17 IST" duration-ms="24683">
-      <class name="com.mystore.testcases.IndexPageTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.mystore.testcases.IndexPageTest@6e005dc9]" started-at="2022-09-26T14:33:52 IST" name="loadConfig" finished-at="2022-09-26T14:33:52 IST" duration-ms="8" status="PASS">
+    <test started-at="2022-09-30T20:42:09 IST" name="Default test" finished-at="2022-09-30T20:42:48 IST" duration-ms="39263">
+      <class name="com.mystore.testcases.AccountCreationPageTest">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.mystore.testcases.AccountCreationPageTest@6f46426d]" started-at="2022-09-30T20:42:10 IST" name="loadConfig" finished-at="2022-09-30T20:42:10 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.testcases.IndexPageTest@6e005dc9]" started-at="2022-09-26T14:33:52 IST" name="setUp" finished-at="2022-09-26T14:34:15 IST" duration-ms="22614" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.testcases.AccountCreationPageTest@6f46426d]" started-at="2022-09-30T20:42:10 IST" name="setUp" finished-at="2022-09-30T20:42:26 IST" duration-ms="15433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="myStoreLogoTest()[pri:0, instance:com.mystore.testcases.IndexPageTest@6e005dc9]" started-at="2022-09-26T14:34:15 IST" name="myStoreLogoTest" finished-at="2022-09-26T14:34:15 IST" duration-ms="173" status="PASS">
+        <test-method signature="createAccountTestHM(java.util.HashMap)[pri:0, instance:com.mystore.testcases.AccountCreationPageTest@6f46426d]" started-at="2022-09-30T20:42:26 IST" name="createAccountTestHM" data-provider="HM" finished-at="2022-09-30T20:42:47 IST" duration-ms="21186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Company=ABCDEF, Address=EDFG123, FirstName=TestUser, Gender=Mrs, City=San, MobilePhone=1234567891, Month=May, Year=1985, State=Alabama, Zipcode=91436, Country=United States, LastName=UserTest, SetPassword=hgsdtyf, Day=22}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- myStoreLogoTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.IndexPageTest@6e005dc9]" started-at="2022-09-26T14:34:16 IST" name="tearDown" finished-at="2022-09-26T14:34:17 IST" duration-ms="911" status="PASS">
+        </test-method> <!-- createAccountTestHM -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.testcases.AccountCreationPageTest@6f46426d]" started-at="2022-09-30T20:42:47 IST" name="tearDown" finished-at="2022-09-30T20:42:48 IST" duration-ms="937" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.mystore.testcases.IndexPageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.mystore.testcases.AccountCreationPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
