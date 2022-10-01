@@ -41,9 +41,9 @@ public class AccountCreationPageTest extends BaseClass {
 		Assert.assertTrue(result, "Account not created");
 	}
 
-	// >>>>>>>>>>>>>>>>>>>>>>creating account without data providers 
+	// >>>>>>>>>>>>>>>>>>>>>>creating account without data providers
 
-	@Test(enabled=false)
+	@Test(enabled = false)
 	public void creaatingAccountTesting() throws Throwable {
 
 		loginPage = indexPage.clickOnSignIn();
@@ -57,14 +57,13 @@ public class AccountCreationPageTest extends BaseClass {
 		Thread.sleep(2000);
 	}
 
-	// ---------------------------------------------------------with data provider 
+	// ---------------------------------------------------------with data provider
 
-	@Test(enabled=false,dataProvider = "testDataInput", dataProviderClass = dataProviderExcel.class)
+	@Test(dataProvider = "testDataInput", dataProviderClass = dataProviderExcel.class)
 	public void creaatingAccountTestingDp(String gender, String fName, String lName, String pswd, String day,
 			String month, String year, String comPany, String addr, String cityString, String stateName, String zip,
 			String countryName, String mobilePhone) throws Throwable {
 
-		
 		loginPage = indexPage.clickOnSignIn();
 		System.out.println("index page sign in success");
 		accountCreationPage = loginPage.createNewAccount(prop.getProperty("emailForNewAccountCreation"));
@@ -72,7 +71,7 @@ public class AccountCreationPageTest extends BaseClass {
 		Thread.sleep(2000);
 
 		accountCreationPage.createAccount(gender, fName, lName, pswd, day, month, year, comPany, addr, cityString,
-			stateName, zip, countryName, mobilePhone);
+				stateName, zip, countryName, mobilePhone);
 
 		/*
 		 * accountCreationPage.createAccount("Mrs","TestUser","UserTest",
@@ -82,11 +81,9 @@ public class AccountCreationPageTest extends BaseClass {
 		Thread.sleep(10000);
 	}
 
-	//--------------------with dataprovider as hashmap
+	// --------------------with dataprovider as hashmap
 	@Test(dataProvider = "HM", dataProviderClass = dataProviderExcel.class)
-	public void createAccountTestHM(HashMap<String,String> hashMapValue) throws Throwable {
-		
-
+	public void createAccountTestHM(HashMap<String, String> hashMapValue) throws Throwable {
 
 		loginPage = indexPage.clickOnSignIn();
 		System.out.println("index page sign in success");
@@ -94,29 +91,55 @@ public class AccountCreationPageTest extends BaseClass {
 		System.out.println("create new account clicked");
 		Thread.sleep(2000);
 
-		//accountCreationPage.createAccount(gender, fName, lName, pswd, day, month, year, comPany, addr, cityString,
-			//stateName, zip, countryName, mobilePhone);
+		// accountCreationPage.createAccount(gender, fName, lName, pswd, day, month,
+		// year, comPany, addr, cityString,
+		// stateName, zip, countryName, mobilePhone);
 
-		
-		accountCreationPage.createAccount(
-				hashMapValue.get("Gender"),
-				hashMapValue.get("FirstName"),
-				hashMapValue.get("LastName"),
-				hashMapValue.get("SetPassword"),
-				hashMapValue.get("Day"),
-				hashMapValue.get("Month"),
-				hashMapValue.get("Year"),
-				hashMapValue.get("Company"),
-				hashMapValue.get("Address"),
-				hashMapValue.get("City"),
-				hashMapValue.get("State"),
-				hashMapValue.get("Zipcode"),
-				hashMapValue.get("Country"),
-				hashMapValue.get("MobilePhone"));
-		
-		
+		accountCreationPage.createAccount(hashMapValue.get("Gender"), hashMapValue.get("FirstName"),
+				hashMapValue.get("LastName"), hashMapValue.get("SetPassword"), hashMapValue.get("Day"),
+				hashMapValue.get("Month"), hashMapValue.get("Year"), hashMapValue.get("Company"),
+				hashMapValue.get("Address"), hashMapValue.get("City"), hashMapValue.get("State"),
+				hashMapValue.get("Zipcode"), hashMapValue.get("Country"), hashMapValue.get("MobilePhone"));
+
 	}
-	//>>>>>>>>>>>>>>>>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	// dataprovider with NewExcelLibrary getTestDataNewExcelLibrary
+	@Test(dataProvider = "testDataInputNewExcelLibrary", dataProviderClass = dataProviderExcel.class)
+	public void creaatingAccountTestingWithDataProviderAndNewExcelLibrary(String gender, String fName, String lName,
+			String pswd, String day, String month, String year, String comPany, String addr, String cityString,
+			String stateName, String zip, String countryName, String mobilePhone) throws Throwable {
+
+		loginPage = indexPage.clickOnSignIn();
+		System.out.println("index page sign in success");
+		accountCreationPage = loginPage.createNewAccount(prop.getProperty("emailForNewAccountCreation"));
+		System.out.println("create new account clicked");
+		Thread.sleep(2000);
+
+		accountCreationPage.createAccount(gender, fName, lName, pswd, day, month, year, comPany, addr, cityString,
+				stateName, zip, countryName, mobilePhone);
+
+		/*
+		 * accountCreationPage.createAccount("Mrs","TestUser","UserTest",
+		 * "hgsdtyf","9","May","1985","ABCDEF","EDFG123","San","Alabama",
+		 * "91436","United States","8489875678");
+		 */
+		Thread.sleep(10000);
+	}
+
+	// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 	@BeforeMethod
 	public void setUp() {
